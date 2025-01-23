@@ -32,6 +32,7 @@ function start(){
     placedBet=parseInt(document.getElementById("bet").value);
 
     if(isNaN(placedBet)){alert("Not a number");return reset();}
+    if(placedBet<1){alert("Not a valid bet");return reset();}
     if(placedBet>balance){alert("Not enough funds");return reset();}
     balance-=placedBet;
     updateBalance();
