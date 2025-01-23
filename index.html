@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lifeContainer">
+        <canvas id="lifes"></canvas>
+    </div>
+    <div class="canvasContainer">
+        <canvas id="canvas"></canvas>
+        <div id="placeBet">
+            <h1>Place bet:</h1>
+            <input id="bet" type="number">
+            <div id="iniciar" onclick="start()">Start</div>
+            <div id="instructions">
+                <p>If the red fighter wins, you get your bet multiplied by its remaining life.</p>
+            </div>
+        </div>
+    </div>
+    <div class="balance">
+        <p id="showBalance">Balance: xxx</p>
+        <div id="restart" onclick="reset()">Restart</div>
+    </div>
+    <script src="loadElements.js"></script>
+    <script src="objects.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
